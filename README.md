@@ -1,2 +1,3 @@
 - Para modularizar o código, criei um diretório de serviços para separar as funcionalidades relacionadas ao csv
 - Para gravar um agendamento é necessário um id novo, criei uma função que pega o ultimo agendamento registrado, pega o seu id e retorna esse id incrementado. 
+- Antes de marcar um agendamento é preciso verificar se o horário está disponível. Há duas condições em relação as datas, o horário precisa estar live e precisar ser entre as 8 e 23 horas. Essas condições serão encapsuladas em uma função que verifica a disponibilidade do horário. 
