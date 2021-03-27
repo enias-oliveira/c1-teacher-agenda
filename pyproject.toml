@@ -6,6 +6,8 @@ authors = ["Enias Oliveira <eniasoliveira27@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
+Flask = "^1.1.2"
+environs = "^9.3.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
