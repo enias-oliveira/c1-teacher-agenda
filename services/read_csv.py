@@ -12,3 +12,10 @@ def get_all_appointments():
     with open(FILENAME, "r") as readable:
         reader = DictReader(readable)
         return [convert_id_and_class_to_int(appointment) for appointment in reader]
+
+
+def get_appointment(target_id: int):
+    appointments = get_all_appointments()
+    return next(
+        filter(lambda appointment: appointment["id"] == target_id, appointments), None
+    )
