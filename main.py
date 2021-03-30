@@ -38,4 +38,24 @@ def create_app():
 
         return service_response, HTTPStatus.OK
 
+    @app.route("/appointment/available_times_on_the_day")
+    def available_times():
+        request_date = request.args.get("date")
+
+        from datetime import datetime
+        from services.read_csv import get_available_times
+
+        request_date_dt = datetime.strptime(request_date, "%d%m%Y")
+        available_times = get_available_times(request_date_dt)
+
+        format_avlb_time = (
+            lambda available_time: f"{available_time[0]:%H:%M}-{available_time[1]:%H:%M}"
+        )
+
+        formatted_available_times = [
+            format_avlb_time(available_time) for available_time in available_times
+        ]
+
+        return {"available-times": formatted_available_times}
+
     return app
