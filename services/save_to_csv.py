@@ -1,7 +1,12 @@
 from csv import DictWriter
 from datetime import datetime, time
 
-from .read_csv import get_all_appointments, get_appointment
+from . import csv_date_to_datetime
+from .read_csv import (
+    get_all_appointments,
+    get_appointment,
+    get_all_booked_times_from_date,
+)
 
 
 def get_new_id():
@@ -23,11 +28,6 @@ def is_service_time(given_time):
     return given_time >= open_time and given_time <= close_time
 
 
-csv_date_to_datetime = lambda given_date: datetime.strptime(
-    given_date, "%Y-%m-%d %H:%M:%S"
-)
-
-
 def hour_rounder(given_date_obj):
     return given_date_obj.replace(
         second=0, microsecond=0, minute=0, hour=given_date_obj.hour
@@ -41,16 +41,11 @@ def is_date_available(given_datetime: datetime):
     if not is_service_time(rounded_hour_time):
         return False
 
-    appointments = get_all_appointments()
+    booked_appointments = get_all_booked_times_from_date(given_datetime)
 
-    appointments_already_booked = [
-        "Booked"
-        for appointment in appointments
-        if appointment["date"] == rounded_hour_date.__str__()
-    ]
-
-    if appointments_already_booked:
-        return False
+    for booked_appointment in booked_appointments:
+        if booked_appointment == rounded_hour_time:
+            return False
 
     return True
 
