@@ -71,4 +71,16 @@ def create_app():
 
         return request_response, HTTPStatus.OK
 
+    @app.route("/appointment/<int:app_id>", methods=["DELETE"])
+    def delete_appointment(app_id):
+
+        from services.save_to_csv import delete_appointment_from_csv
+
+        request_response = delete_appointment_from_csv(app_id)
+
+        if not request_response:
+            return {"msg": "ID not found"}, HTTPStatus.UNPROCESSABLE_ENTITY
+
+        return {}, HTTPStatus.NO_CONTENT
+
     return app

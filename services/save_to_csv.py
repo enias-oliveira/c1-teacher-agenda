@@ -126,3 +126,21 @@ def update_appointment_date(target_id: int, given_date: str) -> dict:
     write_all_appointments(updated_appointments)
 
     return get_appointment(target_id)
+
+
+def delete_appointment_from_csv(target_id: int) -> dict:
+    appointments = get_all_appointments()
+
+    try:
+        updated_appointments = [
+            appointment
+            for appointment in appointments
+            if appointment["id"] != target_id
+        ]
+
+        write_all_appointments(updated_appointments)
+
+        return True
+
+    except Exception:
+        return False
