@@ -58,4 +58,17 @@ def create_app():
 
         return {"available-times": formatted_available_times}
 
+    @app.route("/appointment/<int:app_id>", methods=["PATCH"])
+    def update_appointment(app_id):
+        request_date = request.get_json()["date"]
+
+        from services.save_to_csv import update_appointment_date
+
+        request_response = update_appointment_date(app_id, request_date)
+
+        if not request_response:
+            return {}, HTTPStatus.UNPROCESSABLE_ENTITY
+
+        return request_response, HTTPStatus.OK
+
     return app
