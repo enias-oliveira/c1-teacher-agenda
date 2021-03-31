@@ -1,0 +1,17 @@
+attrs @ file:///home/enias/.cache/pypoetry/artifacts/f9/48/82/553e4bef24d3b294c0c18f27a7853f3ed151508efd144cb7ea37db1c48/attrs-20.3.0-py2.py3-none-any.whl
+click @ file:///home/enias/.cache/pypoetry/artifacts/e2/79/34/a23e9d2f683ed66be11ec3bd760dec3a2fe228cfdedf2071bcf0531b06/click-7.1.2-py2.py3-none-any.whl
+environs @ file:///home/enias/.cache/pypoetry/artifacts/58/11/8a/ae7c3658469ab761d8daf9ef370457189aecacf49571e0164784e105a9/environs-9.3.1-py2.py3-none-any.whl
+Flask @ file:///home/enias/.cache/pypoetry/artifacts/2f/65/9e/7fe305316b8f564a8577a93bfeb984493ce9eeb1e8926abb0ed9030910/Flask-1.1.2-py2.py3-none-any.whl
+itsdangerous @ file:///home/enias/.cache/pypoetry/artifacts/82/e8/60/17593e06004d937316208bbf3859251fdedf80e106b9847181760ee2dd/itsdangerous-1.1.0-py2.py3-none-any.whl
+Jinja2 @ file:///home/enias/.cache/pypoetry/artifacts/c5/c3/19/5cf0bc7ff64d230dd7d23c044479d2b44dabe877ca4165c2d85cbe996d/Jinja2-2.11.3-py2.py3-none-any.whl
+MarkupSafe @ file:///home/enias/.cache/pypoetry/artifacts/a4/78/86/1bb0a788648c202bcaa2e95a65f75ad0939c3d4fe432ce5b720eb424d3/MarkupSafe-1.1.1-cp39-cp39-manylinux2010_x86_64.whl
+marshmallow @ file:///home/enias/.cache/pypoetry/artifacts/0a/a6/1e/da00d5d5d7181dba1448a4998d5f9e49c4081c09e7a097ecbe1fd6679f/marshmallow-3.10.0-py2.py3-none-any.whl
+more-itertools @ file:///home/enias/.cache/pypoetry/artifacts/06/8c/08/25f009f5a9697bfe17bb5789059239edc9053bc9c06ed7db76f146ce57/more_itertools-8.7.0-py3-none-any.whl
+packaging @ file:///home/enias/.cache/pypoetry/artifacts/c2/76/aa/699ed723689e741411dfbdbc9b8c392079d54fb1e1a1b814df7be7cf47/packaging-20.9-py2.py3-none-any.whl
+pluggy @ file:///home/enias/.cache/pypoetry/artifacts/29/58/fc/ed8b7451d3ef91a6465024f5656141da996e7aafd4d41a1659629a75e7/pluggy-0.13.1-py2.py3-none-any.whl
+py @ file:///home/enias/.cache/pypoetry/artifacts/60/79/0b/c48bd9c2a989aa8b1eb7a67cd02b053c10734f2e4e5665f7995f09999c/py-1.10.0-py2.py3-none-any.whl
+pyparsing @ file:///home/enias/.cache/pypoetry/artifacts/92/0f/cf/effdcd5d76a6186df0969f85b3b030284ff8058936d5016540b5258ea3/pyparsing-2.4.7-py2.py3-none-any.whl
+pytest @ file:///home/enias/.cache/pypoetry/artifacts/e4/88/dd/3dbff42e3c4462dc3d027f5024025571166cb35edee215ce93852a968c/pytest-5.4.3-py3-none-any.whl
+python-dotenv @ file:///home/enias/.cache/pypoetry/artifacts/e3/92/c3/26980a0b9ac05a9afa82d3c6120afe6864eada1e344b6dd84dbf9f420f/python_dotenv-0.15.0-py2.py3-none-any.whl
+wcwidth @ file:///home/enias/.cache/pypoetry/artifacts/7d/f4/60/0737157bb9711fec72c70dff523aa54491eef317e0d586cf5388ff0908/wcwidth-0.2.5-py2.py3-none-any.whl
+Werkzeug @ file:///home/enias/.cache/pypoetry/artifacts/5b/83/26/5e5a83cbe509bcc5d52ce4a8fba5d1ad0f8bd321d67002ec782bade539/Werkzeug-1.0.1-py2.py3-none-any.whl
